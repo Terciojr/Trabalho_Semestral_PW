@@ -1,0 +1,128 @@
+/* Estilos gerais para a página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #c5e1e6); /* Um gradiente suave */
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.conteiner {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 95%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espaçamento entre as seções */
+}
+
+/* Estilos para a seção da tabela */
+.tabela h1 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#tabela {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden; /* Para arredondar as bordas da tabela */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+#tabela th,
+#tabela td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#tabela th {
+    background-color: #b0bec5; /* Um cinza azulado suave para o cabeçalho */
+    font-weight: bold;
+    color: #fff;
+}
+
+#tabela tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#tabela tr:hover {
+    background-color: #eee;
+}
+
+#tabela th:first-child,
+#tabela td:first-child {
+    padding-left: 20px;
+}
+
+#tabela th:last-child,
+#tabela td:last-child {
+    padding-right: 20px;
+}
+
+/* Estilos para a seção de funcionalidades */
+.funcionalidades {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.funcionalidades input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    flex-grow: 1; /* Faz os inputs ocuparem o espaço disponível */
+    box-sizing: border-box;
+}
+
+.funcionalidades input[type="text"]::placeholder {
+    color: #999;
+}
+
+.funcionalidades input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Estilos para a seção de botões */
+.botoes {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.botoes button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.botoes button.editar {
+    background-color: #28a745; /* Verde para editar */
+}
+
+.botoes button.editar:hover {
+    background-color: #1e7e34;
+}
+
+.botoes button.excluir {
+    background-color: #dc3545; /* Vermelho para excluir */
+}
+
+.botoes button.excluir:hover {
+    background-color: #c82333;
+}

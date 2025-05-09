@@ -1,0 +1,204 @@
+/* Estilos gerais para a página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f0f2f5, #e2e9f0); /* Fundo suave */
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 90%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espaçamento entre as seções */
+}
+
+/* Estilos para o contêiner do perfil */
+.perfil-conteriner {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+
+.perfil-conteriner h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.campo {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.campo label {
+    font-weight: bold;
+    color: #555;
+    width: 150px;
+    margin-right: 15px;
+    text-align: left;
+}
+
+.campo input[type="text"],
+.campo input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: calc(100% - 165px);
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Cor de fundo para campos desabilitados */
+    color: #555;
+}
+
+.campo input:disabled {
+    cursor: not-allowed;
+}
+
+.botoes {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.botoes button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#editarBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+#editarBtn:hover {
+    background-color: #0056b3;
+}
+
+#salvarBtn,
+#cancelarBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#salvarBtn:hover {
+    background-color: #1e7e34;
+}
+
+#cancelarBtn {
+    background-color: #dc3545;
+}
+
+#cancelarBtn:hover {
+    background-color: #c82333;
+}
+
+.editarPerfil {
+    display: none; /* Ocultar inicialmente */
+    margin-top: 20px;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.editarPerfil button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.editarPerfil button:first-child {
+    background-color: #007bff;
+    color: white;
+}
+
+.editarPerfil button:first-child:hover {
+    background-color: #0056b3;
+}
+
+.editarPerfil button:last-child {
+    background-color: #6c757d;
+    color: white;
+}
+
+.editarPerfil button:last-child:hover {
+    background-color: #545b62;
+}
+
+/* Estilos para o histórico de compras */
+.hisrico h1 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.listadepedidos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    border-radius: 8px;
+    overflow: hidden; /* Para arredondar as bordas da tabela */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.listadepedidos th,
+.listadepedidos td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.listadepedidos th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    color: #333;
+}
+
+.listadepedidos tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.listadepedidos tr:hover {
+    background-color: #eee;
+}
+
+.listadepedidos th:first-child,
+.listadepedidos td:first-child {
+    padding-left: 20px;
+}
+
+.listadepedidos th:last-child,
+.listadepedidos td:last-child {
+    padding-right: 20px;
+    text-align: center;
+}
+
+.listadepedidos .ver-detalhes-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.listadepedidos .ver-detalhes-btn:hover {
+    background-color: #0056b3;
+}

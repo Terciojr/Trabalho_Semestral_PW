@@ -1,0 +1,87 @@
+/* Estilos gerais para a página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #a1c4fd, #c2e9fb); /* Um gradiente suave e convidativo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.conteiner {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo branco levemente transparente */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Faz os elementos filhos ocuparem a largura total */
+}
+
+/* Estilos para os rótulos (labels) */
+label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    display: block; /* Garante que cada label ocupe uma linha */
+    text-align: left;
+}
+
+/* Estilos para os campos de entrada (input) */
+input[type="email"],
+input[type="password"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Bordas arredondadas para os campos */
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Estilos para o botão de logar */
+button {
+    background: linear-gradient(to right, #007bff, #66aaff);
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(to right, #0056b3, #4d86cc);
+    transform: translateY(-2px);
+}
+
+/* Estilos para os links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 8px;
+    display: block; /* Faz cada link ocupar uma linha */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

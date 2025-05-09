@@ -1,0 +1,105 @@
+/* Estilos gerais para a página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #ccf2ff, #99e6ff); /* Um gradiente azul claro e suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px; /* Adicionado um pouco de padding ao body para telas menores */
+    box-sizing: border-box;
+}
+
+.conteiner {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 90%;
+    max-width: 600px; /* Defina uma largura máxima para o contêiner */
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+    display: block;
+    text-align: left;
+}
+
+.formulario input[type="text"],
+.formulario input[type="number"],
+.formulario select,
+.formulario input[type="file"] {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.formulario input[type="text"]:focus,
+.formulario input[type="number"]:focus,
+.formulario select:focus,
+.formulario input[type="file"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+.formulario select {
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="currentColor" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position-x: 97%;
+    background-position-y: 50%;
+    background-size: 18px;
+    padding-right: 35px;
+}
+
+.formulario input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+}
+
+.formulario button {
+    background: linear-gradient(to right, #007bff, #66aaff);
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+    margin-right: 10px; /* Espaço entre os botões */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.formulario button:last-child {
+    background: linear-gradient(to right, #6c757d, #a7b1ba); /* Estilo diferente para o botão Cancelar */
+}
+
+.formulario button:hover {
+    background: linear-gradient(to right, #0056b3, #4d86cc);
+    transform: translateY(-2px);
+}
+
+.formulario button:last-child:hover {
+    background: linear-gradient(to right, #545b62, #869099);
+    transform: translateY(-2px);
+}
+
+.book-cover img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
